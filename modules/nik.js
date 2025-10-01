@@ -14,13 +14,13 @@ async function parseNIK() {
         }
     ]);
 
-    const spinner = ora('Memproses NIK...').start();
+    const spinner = ora('Fetching Metadata...').start();
     
     try {
         const response = await axios.get(`https://api.fikmydomainsz.xyz/tools/nik?nik=${answers.nik}`);
         const data = response.data;
         
-        spinner.succeed('Berhasil memproses NIK!');
+        spinner.succeed('Successfuly fetching data !');
         
         if (data.status) {
             const result = data.result;
