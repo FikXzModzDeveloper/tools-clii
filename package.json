@@ -1,0 +1,20 @@
+{
+  "name": "multi-tools-fmds",
+  "version": "1.0.0",
+  "description": "CLI Multi Tools by FikXzMods",
+  "main": "tools.js",
+  "type": "commonjs",
+  "scripts": {
+    "setup": "node setup.js",
+    "start": "node --no-deprecation tools.js"
+  },
+  "author": "FikXzMods",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "chalk": "^4.1.2",
+    "figlet": "^1.7.0",
+    "inquirer": "^8.2.6",
+    "ora": "^5.4.1"
+  }
+}
